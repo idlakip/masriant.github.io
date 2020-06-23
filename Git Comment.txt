@@ -1,0 +1,817 @@
+Perintah Git 
+1. git init // menjadikan folder git 
+2. git status
+3. git add .  // tambahkan semua/all
+4. git add <file> // tambahkan sesuai nama file
+5. git rm --chaced <file> // to unstage = mengeluarkan dari folder git
+6. git commit -m "initial commit" // commit pertama/store awal atau mengganti file sebelumnya
+7. git commit -am "commit" // modifikasi file yang ada
+8. tanda U = Untracked // file baru yang belum di commit/setor
+9. tanda M = Modifikasi // file yang di modifikasi/mengalami perubahan perintah -am "..."
+10. git add *.html // memasukkan ke folder git dengan extensi yang serupa
+11. -- INSERT -- :wq enter // keluar dari layar setelah perintah
+12. touch .gitignore // membuat file gititnore
+13. touch log.txt // membuat file log.txt 
+14. git branch login // masuk membuat perubahan ke file login 
+15. git checkout login // keluar dari login 
+16. git checkout master 
+17. touch login.html // membuat file
+18. touch index.html // membuat file
+19. git merge login 
+20. added login 
+21. touch README.md 
+
+
+
+Setting Account git di lokal PC
+git config --global user.username "masrianto"
+git config --global user.email "info.masrianto@gmail.com"
+
+Setting GitHub Online
+Copy remote dari GitHub
+git remote 
+git push -u origin master 
+
+
+GIT COMMANDS
+       We divide Git into high level ("porcelain") commands and low level
+       ("plumbing") commands.
+
+HIGH-LEVEL COMMANDS (PORCELAIN)
+       We separate the porcelain commands into the main commands and some
+       ancillary user utilities.
+
+   Main porcelain commands
+       git-add(1)
+           Add file contents to the index.
+
+       git-am(1)
+           Apply a series of patches from a mailbox.
+
+       git-archive(1)
+           Create an archive of files from a named tree.
+
+       git-bisect(1)
+           Use binary search to find the commit that introduced a bug.
+
+       git-branch(1)
+           List, create, or delete branches.
+
+       git-bundle(1)
+           Move objects and refs by archive.
+
+       git-checkout(1)
+           Switch branches or restore working tree files.
+
+       git-cherry-pick(1)
+           Apply the changes introduced by some existing commits.
+
+       git-citool(1)
+           Graphical alternative to git-commit.
+
+       git-clean(1)
+           Remove untracked files from the working tree.
+
+       git-clone(1)
+           Clone a repository into a new directory.
+
+       git-commit(1)
+           Record changes to the repository.
+git-describe(1)
+           Give an object a human readable name based on an available ref.
+
+       git-diff(1)
+           Show changes between commits, commit and working tree, etc.
+
+       git-fetch(1)
+           Download objects and refs from another repository.
+
+       git-format-patch(1)
+           Prepare patches for e-mail submission.
+
+       git-gc(1)
+           Cleanup unnecessary files and optimize the local repository.
+
+       git-grep(1)
+           Print lines matching a pattern.
+
+       git-gui(1)
+           A portable graphical interface to Git.
+
+       git-init(1)
+           Create an empty Git repository or reinitialize an existing one.
+
+       git-log(1)
+           Show commit logs.
+
+       git-merge(1)
+           Join two or more development histories together.
+
+       git-mv(1)
+           Move or rename a file, a directory, or a symlink.
+
+       git-notes(1)
+           Add or inspect object notes.
+
+       git-pull(1)
+           Fetch from and integrate with another repository or a local branch.
+
+       git-push(1)
+           Update remote refs along with associated objects.
+
+       git-range-diff(1)
+           Compare two commit ranges (e.g. two versions of a branch).
+
+       git-rebase(1)
+           Reapply commits on top of another base tip.
+
+       git-reset(1)
+           Reset current HEAD to the specified state.
+git-restore(1)
+           Restore working tree files.
+
+       git-revert(1)
+           Revert some existing commits.
+
+       git-rm(1)
+           Remove files from the working tree and from the index.
+
+       git-shortlog(1)
+           Summarize git log output.
+
+       git-show(1)
+           Show various types of objects.
+
+       git-stash(1)
+           Stash the changes in a dirty working directory away.
+
+       git-status(1)
+           Show the working tree status.
+
+       git-submodule(1)
+           Initialize, update or inspect submodules.
+
+       git-switch(1)
+           Switch branches.
+
+       git-tag(1)
+           Create, list, delete or verify a tag object signed with GPG.
+
+       git-worktree(1)
+           Manage multiple working trees.
+
+       gitk(1)
+           The Git repository browser.
+
+   Ancillary Commands
+       Manipulators:
+
+       git-config(1)
+           Get and set repository or global options.
+
+       git-fast-export(1)
+           Git data exporter.
+
+       git-fast-import(1)
+           Backend for fast Git data importers.
+
+       git-filter-branch(1)
+           Rewrite branches.
+git-mergetool(1)
+           Run merge conflict resolution tools to resolve merge conflicts.
+
+       git-pack-refs(1)
+           Pack heads and tags for efficient repository access.
+
+       git-prune(1)
+           Prune all unreachable objects from the object database.
+
+       git-reflog(1)
+           Manage reflog information.
+
+       git-remote(1)
+           Manage set of tracked repositories.
+
+       git-repack(1)
+           Pack unpacked objects in a repository.
+
+       git-replace(1)
+           Create, list, delete refs to replace objects.
+
+       Interrogators:
+
+       git-annotate(1)
+           Annotate file lines with commit information.
+
+       git-blame(1)
+           Show what revision and author last modified each line of a file.
+
+       git-count-objects(1)
+           Count unpacked number of objects and their disk consumption.
+
+       git-difftool(1)
+           Show changes using common diff tools.
+
+       git-fsck(1)
+           Verifies the connectivity and validity of the objects in the
+           database.
+
+       git-help(1)
+           Display help information about Git.
+
+       git-instaweb(1)
+           Instantly browse your working repository in gitweb.
+
+       git-merge-tree(1)
+           Show three-way merge without touching index.
+
+       git-rerere(1)
+           Reuse recorded resolution of conflicted merges.
+git-rerere(1)
+           Reuse recorded resolution of conflicted merges.
+
+       git-show-branch(1)
+           Show branches and their commits.
+
+       git-verify-commit(1)
+           Check the GPG signature of commits.
+
+       git-verify-tag(1)
+           Check the GPG signature of tags.
+
+       git-whatchanged(1)
+           Show logs with difference each commit introduces.
+
+       gitweb(1)
+           Git web interface (web frontend to Git repositories).
+
+   Interacting with Others
+       These commands are to interact with foreign SCM and with other people via
+       patch over e-mail.
+
+       git-archimport(1)
+           Import a GNU Arch repository into Git.
+
+       git-cvsexportcommit(1)
+           Export a single commit to a CVS checkout.
+
+       git-cvsimport(1)
+           Salvage your data out of another SCM people love to hate.
+
+       git-cvsserver(1)
+           A CVS server emulator for Git.
+
+       git-imap-send(1)
+           Send a collection of patches from stdin to an IMAP folder.
+
+       git-p4(1)
+           Import from and submit to Perforce repositories.
+
+       git-quiltimport(1)
+           Applies a quilt patchset onto the current branch.
+
+       git-request-pull(1)
+           Generates a summary of pending changes.
+
+       git-send-email(1)
+           Send a collection of patches as emails.
+git-svn(1)
+           Bidirectional operation between a Subversion repository and Git.
+
+   Reset, restore and revert
+       There are three commands with similar names: git reset, git restore and
+       git revert.
+
+       o   git-revert(1) is about making a new commit that reverts the changes
+           made by other commits.
+
+       o   git-restore(1) is about restoring files in the working tree from
+           either the index or another commit. This command does not update your
+           branch. The command can also be used to restore files in the index
+           from another commit.
+
+       o   git-reset(1) is about updating your branch, moving the tip in order
+           to add or remove commits from the branch. This operation changes the
+           commit history.
+
+           git reset can also be used to restore the index, overlapping with git
+           restore.
+
+LOW-LEVEL COMMANDS (PLUMBING)
+       Although Git includes its own porcelain layer, its low-level commands are
+       sufficient to support development of alternative porcelains. Developers
+       of such porcelains might start by reading about git-update-index(1) and
+       git-read-tree(1).
+
+       The interface (input, output, set of options and the semantics) to these
+       low-level commands are meant to be a lot more stable than Porcelain level
+       commands, because these commands are primarily for scripted use. The
+       interface to Porcelain commands on the other hand are subject to change
+       in order to improve the end user experience.
+
+       The following description divides the low-level commands into commands
+       that manipulate objects (in the repository, index, and working tree),
+       commands that interrogate and compare objects, and commands that move
+       objects and references between repositories.
+
+   Manipulation commands
+       git-apply(1)
+           Apply a patch to files and/or to the index.
+
+       git-checkout-index(1)
+           Copy files from the index to the working tree.
+
+       git-commit-graph(1)
+           Write and verify Git commit-graph files.
+git-commit-tree(1)
+           Create a new commit object.
+
+       git-hash-object(1)
+           Compute object ID and optionally creates a blob from a file.
+
+       git-index-pack(1)
+           Build pack index file for an existing packed archive.
+
+       git-merge-file(1)
+           Run a three-way file merge.
+
+       git-merge-index(1)
+           Run a merge for files needing merging.
+
+       git-mktag(1)
+           Creates a tag object.
+
+       git-mktree(1)
+           Build a tree-object from ls-tree formatted text.
+
+       git-multi-pack-index(1)
+           Write and verify multi-pack-indexes.
+
+       git-pack-objects(1)
+           Create a packed archive of objects.
+
+       git-prune-packed(1)
+           Remove extra objects that are already in pack files.
+
+       git-read-tree(1)
+           Reads tree information into the index.
+
+       git-symbolic-ref(1)
+           Read, modify and delete symbolic refs.
+
+       git-unpack-objects(1)
+           Unpack objects from a packed archive.
+
+       git-update-index(1)
+           Register file contents in the working tree to the index.
+
+       git-update-ref(1)
+           Update the object name stored in a ref safely.
+
+       git-write-tree(1)
+           Create a tree object from the current index.
+nterrogation commands
+       git-cat-file(1)
+           Provide content or type and size information for repository objects.
+
+       git-cherry(1)
+           Find commits yet to be applied to upstream.
+
+       git-diff-files(1)
+           Compares files in the working tree and the index.
+
+       git-diff-index(1)
+           Compare a tree to the working tree or index.
+
+       git-diff-tree(1)
+           Compares the content and mode of blobs found via two tree objects.
+
+       git-for-each-ref(1)
+           Output information on each ref.
+
+       git-get-tar-commit-id(1)
+           Extract commit ID from an archive created using git-archive.
+
+       git-ls-files(1)
+           Show information about files in the index and the working tree.
+
+       git-ls-remote(1)
+           List references in a remote repository.
+
+       git-ls-tree(1)
+           List the contents of a tree object.
+
+       git-merge-base(1)
+           Find as good common ancestors as possible for a merge.
+
+       git-name-rev(1)
+           Find symbolic names for given revs.
+
+       git-pack-redundant(1)
+           Find redundant pack files.
+
+       git-rev-list(1)
+           Lists commit objects in reverse chronological order.
+
+       git-rev-parse(1)
+           Pick out and massage parameters.
+
+       git-show-index(1)
+           Show packed archive index.
+git-show-ref(1)
+           List references in a local repository.
+
+       git-unpack-file(1)
+           Creates a temporary file with a blob's contents.
+
+       git-var(1)
+           Show a Git logical variable.
+
+       git-verify-pack(1)
+           Validate packed Git archive files.
+
+       In general, the interrogate commands do not touch the files in the
+       working tree.
+
+   Synching repositories
+       git-daemon(1)
+           A really simple server for Git repositories.
+
+       git-fetch-pack(1)
+           Receive missing objects from another repository.
+
+       git-http-backend(1)
+           Server side implementation of Git over HTTP.
+
+       git-send-pack(1)
+           Push objects over Git protocol to another repository.
+
+       git-update-server-info(1)
+           Update auxiliary info file to help dumb servers.
+
+       The following are helper commands used by the above; end users typically
+       do not use them directly.
+
+       git-http-fetch(1)
+           Download from a remote Git repository via HTTP.
+
+       git-http-push(1)
+           Push objects over HTTP/DAV to another repository.
+
+       git-parse-remote(1)
+           Routines to help parsing remote repository access parameters.
+git-receive-pack(1)
+           Receive what is pushed into the repository.
+
+       git-shell(1)
+           Restricted login shell for Git-only SSH access.
+
+       git-upload-archive(1)
+           Send archive back to git-archive.
+
+       git-upload-pack(1)
+           Send objects packed back to git-fetch-pack.
+
+   Internal helper commands
+       These are internal helper commands used by other commands; end users
+       typically do not use them directly.
+
+       git-check-attr(1)
+           Display gitattributes information.
+
+       git-check-ignore(1)
+           Debug gitignore / exclude files.
+
+       git-check-mailmap(1)
+           Show canonical names and email addresses of contacts.
+
+       git-check-ref-format(1)
+           Ensures that a reference name is well formed.
+
+       git-column(1)
+           Display data in columns.
+
+       git-credential(1)
+           Retrieve and store user credentials.
+
+       git-credential-cache(1)
+           Helper to temporarily store passwords in memory.
+
+       git-credential-store(1)
+           Helper to store credentials on disk.
+
+       git-fmt-merge-msg(1)
+           Produce a merge commit message.
+
+       git-interpret-trailers(1)
+           Add or parse structured information in commit messages.
+
+       git-mailinfo(1)
+           Extracts patch and authorship from a single e-mail message.
+git-mailsplit(1)
+           Simple UNIX mbox splitter program.
+
+       git-merge-one-file(1)
+           The standard helper program to use with git-merge-index.
+
+       git-patch-id(1)
+           Compute unique ID for a patch.
+
+       git-sh-i18n(1)
+           Git's i18n setup code for shell scripts.
+
+       git-sh-setup(1)
+           Common Git shell script setup code.
+
+       git-stripspace(1)
+           Remove unnecessary whitespace.
+AUTHORS
+       Git was started by Linus Torvalds, and is currently maintained by Junio C
+       Hamano. Numerous contributions have come from the Git mailing list
+       <git@vger.kernel.org[6]>.
+       http://www.openhub.net/p/git/contributors/summary gives you a more
+       complete list of contributors.
+
+       If you have a clone of git.git itself, the output of git-shortlog(1) and
+       git-blame(1) can show you the authors for specific parts of the project.
+
+REPORTING BUGS
+       Report bugs to the Git mailing list <git@vger.kernel.org[6]> where the
+       development and maintenance is primarily done. You do not have to be
+       subscribed to the list to send a message there. See the list archive at
+       https://public-inbox.org/git for previous bug reports and other
+       discussions.
+
+       Issues which are security relevant should be disclosed privately to the
+       Git Security mailing list <git-security@googlegroups.com[7]>.
+
+SEE ALSO
+       gittutorial(7), gittutorial-2(7), giteveryday(7), gitcvs-migration(7),
+       gitglossary(7), gitcore-tutorial(7), gitcli(7), The Git User's Manual[1],
+       gitworkflows(7)
+
+GIT
+       Part of the git(1) suite
+
+NOTES
+        1. Git User's Manual
+           git-htmldocs/user-manual.html
+
+        2. Trace2 documentation
+           git-htmldocs/technical/api-trace2.html
+
+        3. Git concepts chapter of the user-manual
+           git-htmldocs/user-manual.html#git-concepts
+
+        4. howto
+           git-htmldocs/howto-index.html
+
+        5. Git API documentation
+           git-htmldocs/technical/api-index.html
+
+        6. git@vger.kernel.org
+           mailto:git@vger.kernel.org
+
+        7. git-security@googlegroups.com
+           mailto:git-security@googlegroups.com
+
+Git 2.24.0                         11/04/2019                          
+
+masrianto@Masriantos-MacBook-Air ci4app % git push -u origin master
+The authenticity of host 'github.com (52.74.223.119)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,52.74.223.119' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+masrianto@Masriantos-MacBook-Air ci4app % git config:status
+git: 'config:status' is not a git command. See 'git --help'.
+masrianto@Masriantos-MacBook-Air ci4app % git config status
+error: key does not contain a section: status
+masrianto@Masriantos-MacBook-Air ci4app % git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+masrianto@Masriantos-MacBook-Air ci4app % git help git
+masrianto@Masriantos-MacBook-Air ci4app % w
+masriant.github.io
+
+Looking for git in: /usr/bin/git
+Using git 2.24.3 (Apple Git-128) from /usr/bin/git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /Applications/MAMP/htdocs/ci4app
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+fatal: ambiguous argument 'master': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :Git Comment.txt
+> git ls-files --stage -- /Applications/MAMP/htdocs/ci4app/Git Comment.txt
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git check-ignore -v -z --stdin
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :index.php
+> git ls-files --stage -- /Applications/MAMP/htdocs/ci4app/index.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /Applications/MAMP/htdocs/ci4app/index.php
+> git cat-file -s 5e399997102909c9a14490384e781f63c1e30c83
+> git show :index.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /Applications/MAMP/htdocs/ci4app/index.php
+> git cat-file -s 5e399997102909c9a14490384e781f63c1e30c83
+> git show :index.php
+> git show :Git Comment.txt
+> git ls-files --stage -- /Applications/MAMP/htdocs/ci4app/Git Comment.txt
+> git cat-file -s 93c39c71fdb38ec024a0bacbec1c07fece5c1636
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :index.php
+> git ls-files --stage -- /Applications/MAMP/htdocs/ci4app/index.php
+> git cat-file -s 5e399997102909c9a14490384e781f63c1e30c83
+> git show :Git Comment.txt
+> git ls-files --stage -- /Applications/MAMP/htdocs/ci4app/Git Comment.txt
+> git cat-file -s 93c39c71fdb38ec024a0bacbec1c07fece5c1636
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /Applications/MAMP/htdocs/ci4app/Git Comment.txt
+> git cat-file -s 93c39c71fdb38ec024a0bacbec1c07fece5c1636
+> git show :Git Comment.txt
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git config --local branch.master.github-pr-owner-number
+> git push -u codeigniter master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
