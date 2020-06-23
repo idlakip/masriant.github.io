@@ -9,7 +9,6 @@
 
 <body>
   <h1>Pemrograman Website</h1>
-  <h5>lagi pusing</h5>
 </body>
 
 </html>
