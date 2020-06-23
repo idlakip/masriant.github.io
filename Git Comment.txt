@@ -597,6 +597,8 @@ usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
            [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
            <command> [<args>]
+           
+ vscode://vscode.github-authentication/did-authenticate?windowId=6&code=05000b107cdd868543da&state=6b8ce734-2714-46e6-a68a-2d67428bf498 
 
 These are common Git commands used in various situations:
 
