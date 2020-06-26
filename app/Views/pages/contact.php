@@ -1,3 +1,6 @@
+<?= $this->extend('layout/template'); ?>
+
+<?= $this->section('content'); ?>
 <!-- Main content -->
 <section class="content">
 
@@ -14,7 +17,14 @@
             </div>
         </div>
         <div class="card-body">
-            Start creating your amazing application!
+            <h2>Contact us</h2>
+            <?php foreach ($alamat as $a) : ?>
+                <ul>
+                    <li><?= $a['tipe']; ?></li>
+                    <li><?= $a['alamat']; ?></li>
+                    <li><?= $a['kota']; ?></li>
+                </ul>
+            <?php endforeach; ?>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
@@ -28,3 +38,4 @@
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+<?= $this->endSection(); ?>

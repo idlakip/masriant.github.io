@@ -47,6 +47,10 @@
                 </div>
             </form>
 
+            <?= $this->include('layout/sidebar_right'); ?>
+            <?= $this->include('layout/main_sidebar'); ?>
+            <?= $this->include('layout/sidebar_left'); ?>
+            <?= $this->include('layout/content_wrapper'); ?>
             <?= $this->renderSection('content'); ?>
 
             <footer class="main-footer">

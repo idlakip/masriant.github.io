@@ -9,9 +9,7 @@ class Pages extends BaseController
         $data = [
             'title' => 'Home | LAKIP'
         ];
-        echo view('layout/header', $data);
-        echo view('pages/home');
-        echo view('layout/footer');
+        return view('pages/home', $data);
     }
 
     public function about()
@@ -19,19 +17,27 @@ class Pages extends BaseController
         $data = [
             'title' => 'About | LAKIP'
         ];
-        echo view('layout/header', $data);
-        echo view('pages/about');
-        echo view('layout/footer');
+        return view('pages/about', $data);
     }
 
     public function contact()
     {
         $data = [
-            'title' => 'Contact | LAKIP'
+            'title' => 'Contact Us | LAKIP',
+            'alamat' => [
+                [
+                    'tipe' => 'Rumah',
+                    'alamat' => 'Jln. ABC No. 123',
+                    'kota' => 'Bandung'
+                ],
+                [
+                    'tipe' => 'Kantor',
+                    'alamat' => 'Jln. Kenari No. 45',
+                    'kota' => 'Jakarta'
+                ]
+            ]
         ];
-        echo view('layout/header', $data);
-        echo view('pages/contact');
-        echo view('layout/footer');
+        return view('pages/contact', $data);
     }
 
 
