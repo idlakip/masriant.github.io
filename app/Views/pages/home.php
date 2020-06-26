@@ -1,3 +1,6 @@
+<?= $this->extend('layout/template'); ?>
+
+<?= $this->section('content'); ?>
 <!-- Main content -->
 <section class="content">
 
@@ -27,4 +30,5 @@
 </section>
 <!-- /.content -->
 </div>
+<?= $this->endSection(); ?>
 <!-- /.content-wrapper -->
