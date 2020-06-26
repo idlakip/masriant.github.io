@@ -6,17 +6,32 @@ class Pages extends BaseController
 {
     public function index()
     {
-        return view('pages/home');
+        $data = [
+            'title' => 'Home | LAKIP'
+        ];
+        echo view('layout/header', $data);
+        echo view('pages/home');
+        echo view('layout/footer');
     }
 
     public function about()
     {
-        return view('pages/about');
+        $data = [
+            'title' => 'About | LAKIP'
+        ];
+        echo view('layout/header', $data);
+        echo view('pages/about');
+        echo view('layout/footer');
     }
 
     public function contact()
     {
-        return view('pages/contact');
+        $data = [
+            'title' => 'Contact | LAKIP'
+        ];
+        echo view('layout/header', $data);
+        echo view('pages/contact');
+        echo view('layout/footer');
     }
 
 
