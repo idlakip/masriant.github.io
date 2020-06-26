@@ -1,15 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Main content -->
+<section class="content">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Title</h3>
 
-<body>
-    <h2>about me</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor nobis neque sint dolorum quaerat, fugiat ipsum provident. Tempora enim eaque voluptas iusto expedita dicta quis exercitationem sapiente temporibus nobis.</p>
-</body>
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                    <i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="card-body">
+            Start creating your amazing application!
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            Footer
+        </div>
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
 
-</html>
+</section>
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
