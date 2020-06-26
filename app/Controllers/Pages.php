@@ -7,7 +7,7 @@ class Pages extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Home | LAKIP'
+            'title' => 'Home'
         ];
         return view('pages/home', $data);
     }
@@ -15,7 +15,7 @@ class Pages extends BaseController
     public function about()
     {
         $data = [
-            'title' => 'About | LAKIP'
+            'title' => 'About'
         ];
         return view('pages/about', $data);
     }
@@ -23,7 +23,7 @@ class Pages extends BaseController
     public function contact()
     {
         $data = [
-            'title' => 'Contact Us | LAKIP',
+            'title' => 'Contact Us',
             'alamat' => [
                 [
                     'tipe' => 'Rumah',
