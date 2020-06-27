@@ -13,6 +13,8 @@ class Komik extends BaseController
         ];
 
         $komikModel = new KomikModel();
+        $komik = $komikModel->findAll();
+        dd($komik);
 
         return view('komik/index', $data);
     }
