@@ -18,29 +18,33 @@
                                     <th>No.</th>
                                     <th>Sampul</th>
                                     <th>Judul</th>
-                                    <th>Aksi</th>
+                                    <th>Penulis</th>
+                                    <th>Penerbit</th>
                                     <th>Link</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="/images/bg-title-02.jpg" class="sampul"></td>
-                                    <td>Naruto</td>
-                                    <td> 4</td>
-                                    <td>
-                                        <a href="#" class="btn btn-success">Detail</a>
-                                    </td>
-                                </tr>
-
-
+                                <?php $i = 1; ?>
+                                <?php foreach ($komik as $k) : ?>
+                                    <tr>
+                                        <td><?= $i++; ?></td>
+                                        <td><img src="/images/<?= $k['sampul']; ?>" alt="" class="sampul"></td>
+                                        <td><?= $k['judul']; ?></td>
+                                        <td><?= $k['penulis']; ?></td>
+                                        <td><?= $k['penerbit']; ?></td>
+                                        <td>
+                                            <a href="#" class="btn btn-success">Detail</a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <th>No.</th>
                                     <th>Sampul</th>
                                     <th>Judul</th>
-                                    <th>Aksi</th>
+                                    <th>Penulis</th>
+                                    <th>Penerbit</th>
                                     <th>Link</th>
                                 </tr>
                             </tfoot>
@@ -62,28 +66,33 @@
                                     <th>No.</th>
                                     <th>Sampul</th>
                                     <th>Judul</th>
-                                    <th>Aksi</th>
+                                    <th>Penulis</th>
+                                    <th>Penerbit</th>
                                     <th>Link</th>
                                 </tr>
                             </thead>
                             <tbody>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="/images/bg-title-01.jpg" class="sampul"></td>
-                                    <td>Naruto</td>
-                                    <td> 4</td>
-                                    <td>
-                                        <a href="#" class="btn btn-success">Detail</a>
-                                    </td>
-                                </tr>
+                                <?php $i = 1; ?>
+                                <?php foreach ($komik as $k) : ?>
+                                    <tr>
+                                        <td><?= $i++; ?></td>
+                                        <td><img src="/images/<?= $k['sampul']; ?>" alt="" class="sampul"></td>
+                                        <td><?= $k['judul']; ?></td>
+                                        <td><?= $k['penulis']; ?></td>
+                                        <td><?= $k['penerbit']; ?></td>
+                                        <td>
+                                            <a href="#" class="btn btn-success">Detail</a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <th>No.</th>
                                     <th>Sampul</th>
                                     <th>Judul</th>
-                                    <th>Aksi</th>
+                                    <th>Penulis</th>
+                                    <th>Penerbit</th>
                                     <th>Link</th>
                                 </tr>
                             </tfoot>
