@@ -13,11 +13,11 @@ class Komik extends BaseController
     }
     public function index()
     {
-        $komik = $this->komikModel->findAll();
+        // $komik = $this->komikModel->findAll();
 
         $data = [
             'title' => 'Daftar Komik',
-            'komik' => $komik
+            'komik' => $this->komikModel->getKomik()
         ];
 
 
@@ -26,10 +26,11 @@ class Komik extends BaseController
 
     public function detail($slug)
     {
-        $komik = $this->komikModel->where(['slug' => $slug])->first();
-        dd($komik);
+        $data = [
+            'title' => 'Detail Komik',
+            'komik' => $this->komikModel->getKomik($slug)
+        ];
+
+        return view('komik/detail', $data);
     }
-
-    //--------------------------------------------------------------------
-
 }
