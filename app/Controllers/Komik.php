@@ -9,36 +9,15 @@ class Komik extends BaseController
         $data = [
             'title' => 'Daftar Komik'
         ];
+
+        // cara connect DB tanpa model
+        $db = \Config\Database::connect();
+        $komik = $db->query("SELECT * FROM komik");
+        dd($komik);
+
         return view('komik/index', $data);
     }
 
-    public function about()
-    {
-        $data = [
-            'title' => 'About'
-        ];
-        return view('pages/about', $data);
-    }
-
-    public function contact()
-    {
-        $data = [
-            'title' => 'Contact Us',
-            'alamat' => [
-                [
-                    'tipe' => 'Rumah',
-                    'alamat' => 'Jln. ABC No. 123',
-                    'kota' => 'Bandung'
-                ],
-                [
-                    'tipe' => 'Kantor',
-                    'alamat' => 'Jln. Kenari No. 45',
-                    'kota' => 'Jakarta'
-                ]
-            ]
-        ];
-        return view('pages/contact', $data);
-    }
 
 
     //--------------------------------------------------------------------
