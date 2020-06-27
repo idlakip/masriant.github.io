@@ -40,6 +40,15 @@ class Pages extends BaseController
         return view('pages/contact', $data);
     }
 
+    public function profile()
+    {
+        $data = [
+            'title' => 'Profile'
+        ];
+
+        return view('pages/profile', $data);
+    }
+
 
     //--------------------------------------------------------------------
 
