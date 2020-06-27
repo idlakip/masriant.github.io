@@ -13,7 +13,9 @@ class Komik extends BaseController
         // cara connect DB tanpa model
         $db = \Config\Database::connect();
         $komik = $db->query("SELECT * FROM komik");
-        dd($komik);
+        foreach ($komik->getResultArray() as $row) {
+            d($row);
+        }
 
         return view('komik/index', $data);
     }
