@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 
-<!-- <body class="hold-transition sidebar-mini"> -->
-<!-- <body class="hold-transition sidebar-mini layout-footer-fixed"> -->
-<!-- <body class="hold-transition sidebar-mini layout-navbar-fixed"> -->
+<body class="hold-transition sidebar-mini">
+    <!-- <body class="hold-transition sidebar-mini layout-footer-fixed"> -->
+    <!-- <body class="hold-transition sidebar-mini layout-navbar-fixed"> -->
 
-<body class="hold-transition sidebar-mini sidebar-collapse layout-footer-fixed">
+    <!-- <body class="hold-transition sidebar-mini sidebar-collapse layout-footer-fixed"> -->
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
@@ -35,6 +35,9 @@
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="<?= base_url('/pages/about'); ?>" class="nav-link">About</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="<?= base_url('/komik'); ?>" class="nav-link">Komik</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="<?= base_url('/pages/contact'); ?>" class="nav-link">Contact</a>
