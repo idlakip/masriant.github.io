@@ -13,6 +13,10 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <!-- jsGrid -->
+    <link rel="stylesheet" href="../../plugins/jsgrid/jsgrid.min.css">
+    <link rel="stylesheet" href="../../plugins/jsgrid/jsgrid-theme.min.css">
+    <!-- Theme style -->
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
@@ -79,6 +83,9 @@
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jsGrid -->
+    <script src="../../plugins/jsgrid/demos/db.js"></script>
+    <script src="../../plugins/jsgrid/jsgrid.min.js"></script>
     <!-- DataTables -->
     <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -103,6 +110,49 @@
                 "info": true,
                 "autoWidth": false,
                 "responsive": true,
+            });
+        });
+    </script>
+    <!-- page script -->
+    <script>
+        $(function() {
+            $("#jsGrid1").jsGrid({
+                height: "100%",
+                width: "100%",
+
+                sorting: true,
+                paging: true,
+
+                data: db.clients,
+
+                fields: [{
+                        name: "Name",
+                        type: "text",
+                        width: 150
+                    },
+                    {
+                        name: "Age",
+                        type: "number",
+                        width: 50
+                    },
+                    {
+                        name: "Address",
+                        type: "text",
+                        width: 200
+                    },
+                    {
+                        name: "Country",
+                        type: "select",
+                        items: db.countries,
+                        valueField: "Id",
+                        textField: "Name"
+                    },
+                    {
+                        name: "Married",
+                        type: "checkbox",
+                        title: "Is Married"
+                    }
+                ]
             });
         });
     </script>
