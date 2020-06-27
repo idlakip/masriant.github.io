@@ -7,7 +7,7 @@ use App\Models\KomikModel;
 class Komik extends BaseController
 {
     protected $komikModel;
-    public function __callStatic()
+    public function __construct()
     {
         $this->komikModel = new KomikModel();
     }
