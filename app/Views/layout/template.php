@@ -40,6 +40,9 @@
                     <a href="<?= base_url('/pages/contact'); ?>" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
+                    <a href="<?= base_url('/pages/profile'); ?>" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
                     <a href="<?= base_url('/komik'); ?>" class="nav-link">Komik</a>
                 </li>
             </ul>
