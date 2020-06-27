@@ -33,7 +33,7 @@
                                         <td><?= $k['penulis']; ?></td>
                                         <td><?= $k['penerbit']; ?></td>
                                         <td>
-                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-success">Detail</a>
+                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-success .btn-sm">Detail</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
@@ -81,7 +81,7 @@
                                         <td><?= $k['penulis']; ?></td>
                                         <td><?= $k['penerbit']; ?></td>
                                         <td>
-                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-success">Detail</a>
+                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-success .btn-sm">Detail</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
