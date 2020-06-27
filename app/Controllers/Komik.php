@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\KomikModel;
+
 class Komik extends BaseController
 {
     public function index()
@@ -10,7 +12,7 @@ class Komik extends BaseController
             'title' => 'Daftar Komik'
         ];
 
-        $komikModel = new \App\Models\KomikModel();
+        $komikModel = new KomikModel();
 
         return view('komik/index', $data);
     }
