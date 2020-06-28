@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition sidebar-mini">
-    <!-- <body class="hold-transition sidebar-mini layout-footer-fixed"> -->
-    <!-- <body class="hold-transition sidebar-mini layout-navbar-fixed"> -->
+<!-- <body class="hold-transition sidebar-mini"> -->
+<!-- <body class="hold-transition sidebar-mini layout-footer-fixed"> -->
+<!-- <body class="hold-transition sidebar-mini layout-navbar-fixed"> -->
 
-    <!-- <body class="hold-transition sidebar-mini sidebar-collapse layout-footer-fixed"> -->
+<body class="hold-transition sidebar-mini sidebar-collapse layout-footer-fixed">
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
