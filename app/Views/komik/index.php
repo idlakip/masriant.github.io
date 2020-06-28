@@ -8,7 +8,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">DataTable with minimal features & hover style</h3>
+                        <h3 class="card-title"> <a href="/komik/create" class="btn btn-sm btn-primary"> <i class="fa fa-plus" aria-hidden="true"></i> Add data</a></h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -33,7 +33,7 @@
                                         <td><?= $k['penulis']; ?></td>
                                         <td><?= $k['penerbit']; ?></td>
                                         <td>
-                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-success .btn-sm">Detail</a>
+                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-sm btn-success"><i class="fa fa-id-card" aria-hidden="true"></i> Detail</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
@@ -81,7 +81,7 @@
                                         <td><?= $k['penulis']; ?></td>
                                         <td><?= $k['penerbit']; ?></td>
                                         <td>
-                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-success .btn-sm">Detail</a>
+                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-id-card" aria-hidden="true"></i> Detail</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
