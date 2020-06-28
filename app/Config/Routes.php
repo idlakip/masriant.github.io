@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\Komik;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -33,8 +35,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'Pages::index');
-
-// $routes->get('/komik/(:segment)', 'Komik::detail/$1');
+$routes->get('/komik/create', 'Komik::create');
+$routes->get('/komik/(:segment)', 'Komik::detail/$1');
 
 /**
  * --------------------------------------------------------------------

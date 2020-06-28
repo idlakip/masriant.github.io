@@ -80,7 +80,8 @@
 
 <body>
 	<div class="wrap">
-		<h1>404 - File Not Found</h1>
+		<h1>404 - File Not Found </h1>
+		<h2>Peringatan Sistem :</h2>
 
 		<p>
 			<?php if (!empty($message) && $message !== '(null)') : ?>
