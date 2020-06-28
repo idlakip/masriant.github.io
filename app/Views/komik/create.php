@@ -18,6 +18,7 @@
         </div>
         <div class="card-body">
             <h2 class="my-3">Form Tambah Data</h2>
+            <!-- <form class="quickForm" action="/komik/save" method="post"> -->
             <form class="form-horizontal" action="/komik/save" method="post">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
@@ -41,38 +42,34 @@
                 <div class="form-group row">
                     <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" id="sampul" name="sampul" placeholder="Sampul"></textarea>
+                        <input type="text" class="form-control" id="sampul" name="sampul" placeholder="Sampul" .jpg>
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
-                    <div class="col-sm-10">
-                        <input type="img" class="form-control" id="sampul" name="sampul" placeholder="sampul">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="offset-sm-2 col-sm-10">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="offset-sm-2 col-sm-10">
-                        <button type="submit" class="btn btn-danger">Submit</button>
-                    </div>
-                </div>
-            </form>
-
 
         </div>
-        <!-- /.card-body -->
-        <div class="card-footer">
-            Footer
+        <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                </div>
+            </div>
         </div>
-        <!-- /.card-footer-->
+        <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
+        </div>
+        </form>
+
+
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+        Footer
+    </div>
+    <!-- /.card-footer-->
     </div>
     <!-- /.card -->
 
