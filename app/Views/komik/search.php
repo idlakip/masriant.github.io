@@ -12,6 +12,8 @@
                     <div class="card-header">
                         <h3 class="card-title">Data Table <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a></h3>
                     </div>
+
+
                     <!-- /.card-header -->
                     <div class="card-body">
                         <table id="newData1" class="table table-bordered table-striped">
@@ -51,10 +53,14 @@
                                 </tr>
                             </tfoot>
                         </table>
+
+
                     </div>
                     <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
+
+
             </div>
             <!-- /.col -->
         </div>
