@@ -47,6 +47,16 @@ class Komik extends BaseController
         return view('komik/create', $data);
     }
 
+    public function search()
+    {
+        $data = [
+            'title' => 'Form search data',
+            'komik' => $this->komikModel->getKomik()
+        ];
+
+        return view('komik/search', $data);
+    }
+
     public function save()
     {
         $slug = url_title($this->request->getVar('judul'), '-', true);

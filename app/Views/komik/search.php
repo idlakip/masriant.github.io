@@ -6,18 +6,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
+
+
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title"> <a href="/komik/create" class="btn btn-sm btn-primary"> <i class="fa fa-plus" aria-hidden="true"></i> Add data</a> <a href="/komik/search" class="btn btn-sm btn-warning"> <i class="fab fa-searchengin"></i> Cari data</a></h3>
+                        <h3 class="card-title">Data Table <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a></h3>
                     </div>
-                    <?php if (session()->getFlashdata('pesan')) : ?>
-                        <div class="alert alert-success" role="alert">
-                            <?= session()->getFlashdata('pesan'); ?>
-                        </div>
-                    <?php endif; ?>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="newData2" class="table table-bordered table-hover">
+                        <table id="newData1" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
                                     <th>No.</th>
@@ -38,7 +35,7 @@
                                         <td><?= $k['penulis']; ?></td>
                                         <td><?= $k['penerbit']; ?></td>
                                         <td>
-                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-sm btn-success"><i class="fa fa-id-card" aria-hidden="true"></i> Detail</a>
+                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-id-card" aria-hidden="true"></i> Detail</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
@@ -58,8 +55,6 @@
                     <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
-
-
             </div>
             <!-- /.col -->
         </div>
