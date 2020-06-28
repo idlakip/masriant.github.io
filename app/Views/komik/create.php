@@ -7,7 +7,7 @@
     <!-- Default box -->
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title"><?= $title; ?></h3>
+            <h3 class="card-title"><?= $title; ?> <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a></h3>
 
             <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -17,36 +17,46 @@
             </div>
         </div>
         <div class="card-body">
-            <h2 class="my-3">Form Tambah Data</h2>
+            <!-- <h2 class="my-3">Form Tambah Data </h2> -->
             <!-- <form class="form-horizontal" action="/komik/save" method="post" id="quickForm"> -->
+            
             <form class="form-horizontal" action="/komik/save" method="post">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
                     <label for="judul" class="col-sm-2 col-form-label">Judul</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="judul" name="judul" placeholder="Judul" autofocus>
+                        <input type="text" class="form-control <?= ($validation->hasError('judul')) ? 'is-invalid' : ''; ?>" id="judul" name="judul" autofocus value="<?= old('judul'); ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('judul'); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="penulis" class="col-sm-2 col-form-label">Penulis</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="penulis" name="penulis" placeholder="Penulis">
+                        <input type="text" class="form-control" id="penulis" name="penulis" placeholder="Penulis" value="<?= old('penulis'); ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('penulis'); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="penerbit" class="col-sm-2 col-form-label">Penerbit</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="penerbit" name="penerbit" placeholder="Penerbit">
+                        <input type="text" class="form-control" id="penerbit" name="penerbit" placeholder="Penerbit" value="<?= old('penerbit'); ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('penerbit'); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="sampul" name="sampul" placeholder="Sampul">
+                        <input type="text" class="form-control" id="sampul" name="sampul" placeholder="Sampul" value="<?= old('sampul'); ?>">
                     </div>
                 </div>
 
-        </div>
+        <!-- </div> -->
         <div class="form-group row">
             <div class="offset-sm-2 col-sm-10">
                 <div class="checkbox">
@@ -67,7 +77,7 @@
     </div>
     <!-- /.card-body -->
     <div class="card-footer">
-        Footer
+        Pastikan memasukkan data yang dengan benar karena data tersebut yan akan tercetak di database dan seluruh hal administrasi.
     </div>
     <!-- /.card-footer-->
     </div>
