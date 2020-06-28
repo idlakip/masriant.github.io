@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\KomikModel;
+use CodeIgniter\Validation\Rules;
 
 class Komik extends BaseController
 {
@@ -67,9 +68,26 @@ class Komik extends BaseController
                 'rules' => 'required|is_unique[komik.judul]',
                 'errors' => [
                     'required' => '{field} komik harus diisi.',
-                    'is_unique' => '{field} komik sudah terdaftar'
+                    'is_unique' => '{field} komik sudah terdaftar.'
+                ]
+            ],
+            'penulis' => [
+                'rules' => 'required|is_unique[komik.penulis]',
+                'errors' => [
+                    'required' => '{field} penulis harus diisi.',
+                    'is_unique' => '{field} sudah terdaftar.'
+                ]
+            ],
+            'penerbit' => [
+                'rules' => 'required|is_unique[komik.penerbit]',
+                'errors' => [
+                    'required' => '{field} harus diisi.',
+                    'is_unique' => '{field} sudah terdaftar.'
                 ]
             ]
+
+
+
 
         ])) {
             $validation = \Config\Services::validation();
