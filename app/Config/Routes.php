@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'Pages::index');
 
-$routes->get('/komik/(:segment)', 'Komik::detail/$1');
+// $routes->get('/komik/(:segment)', 'Komik::detail/$1');
 
 /**
  * --------------------------------------------------------------------
