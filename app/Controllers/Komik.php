@@ -67,14 +67,14 @@ class Komik extends BaseController
             'judul' => [
                 'rules' => 'required|is_unique[komik.judul]',
                 'errors' => [
-                    'required' => '{field} komik harus diisi.',
-                    'is_unique' => '{field} komik sudah terdaftar.'
+                    'required' => '{field} harus diisi.',
+                    'is_unique' => '{field} sudah terdaftar.'
                 ]
             ],
             'penulis' => [
                 'rules' => 'required|is_unique[komik.penulis]',
                 'errors' => [
-                    'required' => '{field} penulis harus diisi.',
+                    'required' => '{field} harus diisi.',
                     'is_unique' => '{field} sudah terdaftar.'
                 ]
             ],

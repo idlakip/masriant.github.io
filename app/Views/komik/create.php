@@ -19,7 +19,7 @@
         <div class="card-body">
             <!-- <h2 class="my-3">Form Tambah Data </h2> -->
             <!-- <form class="form-horizontal" action="/komik/save" method="post" id="quickForm"> -->
-            
+
             <form class="form-horizontal" action="/komik/save" method="post">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
@@ -34,7 +34,7 @@
                 <div class="form-group row">
                     <label for="penulis" class="col-sm-2 col-form-label">Penulis</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="penulis" name="penulis" placeholder="Penulis" value="<?= old('penulis'); ?>">
+                        <input type="text" class="form-control <?= ($validation->hasError('penulis')) ? 'is-invalid' : ''; ?>" id="penulis" name="penulis" placeholder="Penulis" value="<?= old('penulis'); ?>">
                         <div class="invalid-feedback">
                             <?= $validation->getError('penulis'); ?>
                         </div>
@@ -43,7 +43,7 @@
                 <div class="form-group row">
                     <label for="penerbit" class="col-sm-2 col-form-label">Penerbit</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="penerbit" name="penerbit" placeholder="Penerbit" value="<?= old('penerbit'); ?>">
+                        <input type="text" class="form-control <?= ($validation->hasError('penerbit')) ? 'is-invalid' : ''; ?>" id="penerbit" name="penerbit" placeholder="Penerbit" value="<?= old('penerbit'); ?>">
                         <div class="invalid-feedback">
                             <?= $validation->getError('penerbit'); ?>
                         </div>
@@ -56,30 +56,30 @@
                     </div>
                 </div>
 
-        <!-- </div> -->
-        <div class="form-group row">
-            <div class="offset-sm-2 col-sm-10">
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                    </label>
+                <!-- </div> -->
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> I agree to the <a href=" #">terms and conditions</a>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="form-group row">
-            <div class="offset-sm-2 col-sm-10">
-                <button type="submit" class="btn btn-danger">Submit</button>
-            </div>
-        </div>
-        </form>
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <button type="submit" class="btn btn-sm btn-danger"><i class="far fa-closed-captioning"></i> Submit</button>
+                        <button type="reset" class="btn btn-sm btn-primary"><i class="fas fa-undo-alt"></i> Reset</button>
+                    </div>
+                </div>
+            </form>
 
-
-    </div>
-    <!-- /.card-body -->
-    <div class="card-footer">
-        Pastikan memasukkan data yang dengan benar karena data tersebut yan akan tercetak di database dan seluruh hal administrasi.
-    </div>
-    <!-- /.card-footer-->
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            Pastikan memasukkan data dengan benar karena data tersebut yang akan tercetak di database dan seluruh hal administrasi.
+        </div>
+        <!-- /.card-footer-->
     </div>
     <!-- /.card -->
 

@@ -26,7 +26,9 @@
 <!-- <body class="hold-transition sidebar-mini layout-footer-fixed"> -->
 <!-- <body class="hold-transition sidebar-mini layout-navbar-fixed"> -->
 
-<body class="hold-transition sidebar-mini sidebar-collapse layout-footer-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+
+    <!-- <body class="hold-transition sidebar-mini sidebar-collapse layout-footer-fixed"> -->
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
