@@ -18,7 +18,7 @@
         </div>
         <div class="card-body">
             <h2 class="my-3">Form Tambah Data</h2>
-            <!-- <form class="quickForm" action="/komik/save" method="post"> -->
+            <!-- <form class="form-horizontal" action="/komik/save" method="post" id="quickForm"> -->
             <form class="form-horizontal" action="/komik/save" method="post">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
@@ -42,7 +42,7 @@
                 <div class="form-group row">
                     <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="sampul" name="sampul" placeholder="Sampul" .jpg>
+                        <input type="text" class="form-control" id="sampul" name="sampul" placeholder="Sampul">
                     </div>
                 </div>
 

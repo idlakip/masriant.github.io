@@ -102,11 +102,14 @@
     <!-- page script -->
     <script>
         $(function() {
-            $("#example1").DataTable({
+            $("#newData1").DataTable({
                 "responsive": true,
-                "autoWidth": false,
+                "autoWidth": true,
+                "info": true,
+                "paging": true,
+
             });
-            $('#example2').DataTable({
+            $('#newData2').DataTable({
                 "paging": true,
                 "lengthChange": false,
                 "searching": false,
