@@ -39,6 +39,10 @@ $routes->get('/komik/create', 'Komik::create');
 $routes->get('/komik/search', 'Komik::search');
 $routes->get('/komik/(:segment)', 'Komik::detail/$1');
 
+$routes->get('/database/create', 'Database::create');
+$routes->get('/database/search', 'Database::search');
+$routes->get('/database/(:segment)', 'database::detail/$1');
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing
