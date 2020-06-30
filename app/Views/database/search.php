@@ -1,4 +1,4 @@
-<?= $this->extend('layout/templates/tables'); ?>
+<?= $this->extend('layout/templates/DataTables'); ?>
 
 <?= $this->section('content'); ?>
 <!-- Main content -->
@@ -10,7 +10,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Data Table <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a></h3>
+                        <h3 class="card-title">Data Table <a href="/database" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a></h3>
                     </div>
 
 
@@ -29,15 +29,15 @@
                             </thead>
                             <tbody>
                                 <?php $i = 1; ?>
-                                <?php foreach ($komik as $k) : ?>
+                                <?php foreach ($database as $d) : ?>
                                     <tr>
                                         <td><?= $i++; ?></td>
-                                        <td><img src="/images/<?= $k['sampul']; ?>" alt="" class="sampul"></td>
-                                        <td><?= $k['judul']; ?></td>
-                                        <td><?= $k['penulis']; ?></td>
-                                        <td><?= $k['penerbit']; ?></td>
+                                        <td><img src="/images/<?= $d['sampul']; ?>" alt="" class="sampul"></td>
+                                        <td><?= $d['judul']; ?></td>
+                                        <td><?= $d['penulis']; ?></td>
+                                        <td><?= $d['penerbit']; ?></td>
                                         <td>
-                                            <a href="/komik/<?= $k['slug']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-id-card" aria-hidden="true"></i> Detail</a>
+                                            <a href="/database/<?= $d['slug']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-id-card" aria-hidden="true"></i> Detail</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
