@@ -23,20 +23,20 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="/images/<?= $komik['sampul']; ?>" class="card-img" alt="">
+                        <img src="/images/<?= $database['sampul']; ?>" class="card-img" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title"><?= $komik['judul']; ?></h5>
+                            <h5 class="card-title"><?= $database['judul']; ?></h5>
                             <br>
                             <ul class="ml-4 mb-0 fa-ul text-muted">
-                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> <b>Penulis : </b> <?= $komik['penulis']; ?> </li>
-                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <b>Penerbit : </b> <?= $komik['penerbit']; ?> </li>
+                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> <b>Penulis : </b> <?= $database['penulis']; ?> </li>
+                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <b>Penerbit : </b> <?= $database['penerbit']; ?> </li>
                             </ul>
 
                             <a href="" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
                             <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
-                            <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
+                            <a href="/database" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
                         </div>
                     </div>
                 </div>
@@ -50,20 +50,20 @@
             <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
                 <div class="card bg-light">
                     <div class="card-header text-muted border-bottom-0">
-                        Detail <?= $komik['penerbit']; ?>
+                        Detail <?= $database['penerbit']; ?>
                     </div>
                     <div class="card-body pt-0">
                         <div class="row">
                             <div class="col-7">
-                                <h2 class="lead"><b><?= $komik['judul']; ?></b></h2>
-                                <p class="text-muted text-sm"><b>About: </b> <?= $komik['judul']; ?> </p>
+                                <h2 class="lead"><b><?= $database['judul']; ?></b></h2>
+                                <p class="text-muted text-sm"><b>About: </b> <?= $database['judul']; ?> </p>
                                 <ul class="ml-4 mb-0 fa-ul text-muted">
-                                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> <b>Penulis : </b><?= $komik['penulis']; ?> </li>
-                                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <b>Penerbit : </b><?= $komik['penerbit']; ?> </li>
+                                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> <b>Penulis : </b><?= $database['penulis']; ?> </li>
+                                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <b>Penerbit : </b><?= $database['penerbit']; ?> </li>
                                 </ul>
                             </div>
                             <div class="col-5 text-center">
-                                <img src="/images/<?= $komik['sampul']; ?>" alt="user-avatar" class="img-circle img-fluid">
+                                <img src="/images/<?= $database['sampul']; ?>" alt="user-avatar" class="img-circle img-fluid">
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                         <div class="text-right">
                             <a href="" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
                             <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
-                            <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
+                            <a href="/database" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
 
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                 <a href="/" class="btn btn-sm bg-teal">
                     <i class="fas fa-home"></i> Home
                 </a>
-                <a href="/komik" class="btn btn-sm btn-primary">
+                <a href="/database" class="btn btn-sm btn-primary">
                     <i class="fas fa-user"></i> Back
                 </a>
             </div>

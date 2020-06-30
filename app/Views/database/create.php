@@ -7,7 +7,7 @@
     <!-- Default box -->
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title"><?= $title; ?> <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a></h3>
+            <h3 class="card-title"><?= $title; ?> <a href="/database" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a></h3>
 
             <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -18,9 +18,9 @@
         </div>
         <div class="card-body">
             <!-- <h2 class="my-3">Form Tambah Data </h2> -->
-            <!-- <form class="form-horizontal" action="/komik/save" method="post" id="quickForm"> -->
+            <!-- <form class="form-horizontal" action="/database/save" method="post" id="quickForm"> -->
 
-            <form class="form-horizontal" action="/komik/save" method="post">
+            <form class="form-horizontal" action="/database/save" method="post">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
                     <label for="judul" class="col-sm-2 col-form-label">Judul</label>
