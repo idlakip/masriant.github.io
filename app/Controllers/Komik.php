@@ -116,5 +116,11 @@ class Komik extends BaseController
 
     public function edit($slug)
     {
+        $data = [
+            'title' => 'Form Ubah Data',
+            'validation' => \Config\Services::validation()
+        ];
+
+        return view('komik/edit', $data);
     }
 }
