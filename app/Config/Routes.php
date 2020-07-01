@@ -37,12 +37,13 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Pages::index');
 $routes->get('/komik/create', 'Komik::create');
 $routes->get('/komik/search', 'Komik::search');
-$routes->get('/komik/(:segment)', 'Komik::detail/$1');
+$routes->delete('/komik/(:num)', 'Komik::delete/$1');
+$routes->get('/komik/(:any)', 'Komik::detail/$1');
 
 $routes->get('/database/create', 'Database::create');
 $routes->get('/database/search', 'Database::search');
 $routes->get('/database/invoice', 'Database::invoice');
-$routes->get('/database/(:segment)', 'Database::detail/$1');
+$routes->get('/database/(:any)', 'Database::detail/$1');
 
 /**
  * --------------------------------------------------------------------

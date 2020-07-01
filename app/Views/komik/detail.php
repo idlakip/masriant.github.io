@@ -45,8 +45,13 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="text-right">
-                                        <a href="/komik/edit/<?= $komik['id']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
-                                        <a href="/komik/delete/<?= $komik['id']; ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                                        <a href="/komik/edit/<?= $komik['slug']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
+
+                                        <form action="/komik/<?= $komik['id']; ?>" method="POST" class="d-inline">
+                                            <?= csrf_field(); ?>
+                                            <input type="hidden" name="_method" value="DELETE">
+                                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin?');"><i class="fas fa-trash-alt"></i> Delete</button>
+                                        </form>
                                         <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
 
                                     </div>
@@ -77,8 +82,12 @@
                         </div>
                         <div class="card-footer">
                             <div class="text-right">
-                                <a href="/komik/edit/<?= $komik['id']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
-                                <a href="/komik/delete/<?= $komik['id']; ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                                <a href="/komik/edit/<?= $komik['slug']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
+                                <form action="/komik/<?= $komik['id']; ?>" method="POST" class="d-inline">
+                                    <?= csrf_field(); ?>
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin?');"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </form>
                                 <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
 
                             </div>
@@ -115,7 +124,7 @@
                                 <img src="/images/<?= $komik['sampul']; ?>" class="card-img" alt="">
                             </div>
                             <div class="col-md-8">
-                                <div class="card-body">
+                                <div class="card-body d-inline">
                                     <h5 class="card-title"><?= $komik['judul']; ?></h5>
                                     <br>
                                     <ul class="ml-4 mb-0 fa-ul text-muted">
@@ -123,8 +132,12 @@
                                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <b>Penerbit : </b> <?= $komik['penerbit']; ?> </li>
                                     </ul>
 
-                                    <a href="/komik/edit/<?= $komik['id']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
-                                    <a href="/komik/delete/<?= $komik['id']; ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                                    <a href="/komik/edit/<?= $komik['slug']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
+                                    <form action="/komik/<?= $komik['id']; ?>" method="POST" class="d-inline">
+                                        <?= csrf_field(); ?>
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin?');"><i class="fas fa-trash-alt"></i> Delete</button>
+                                    </form>
                                     <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
                                 </div>
                             </div>
