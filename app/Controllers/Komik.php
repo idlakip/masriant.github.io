@@ -86,9 +86,6 @@ class Komik extends BaseController
                 ]
             ]
 
-
-
-
         ])) {
             $validation = \Config\Services::validation();
             return redirect()->to('/komik/create')->withInput()->with('validation', $validation);
@@ -105,6 +102,12 @@ class Komik extends BaseController
 
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
 
+        return redirect()->to('/komik');
+    }
+
+    public function delete($id)
+    {
+        $this->komikModel->delete($id);
         return redirect()->to('/komik');
     }
 }

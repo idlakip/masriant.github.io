@@ -45,8 +45,8 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="text-right">
-                                        <a href="" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
-                                        <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                                        <a href="/komik/edit/<?= $komik['id']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
+                                        <a href="/komik/delete/<?= $komik['id']; ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
                                         <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
 
                                     </div>
@@ -77,8 +77,8 @@
                         </div>
                         <div class="card-footer">
                             <div class="text-right">
-                                <a href="" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
-                                <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                                <a href="/komik/edit/<?= $komik['id']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
+                                <a href="/komik/delete/<?= $komik['id']; ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
                                 <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
 
                             </div>
@@ -123,8 +123,8 @@
                                         <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> <b>Penerbit : </b> <?= $komik['penerbit']; ?> </li>
                                     </ul>
 
-                                    <a href="" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
-                                    <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+                                    <a href="/komik/edit/<?= $komik['id']; ?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i> Edit </a>
+                                    <a href="/komik/delete/<?= $komik['id']; ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
                                     <a href="/komik" class="btn btn-sm btn-primary"> <i class="fas fa-undo-alt"></i> Back</a>
                                 </div>
                             </div>
