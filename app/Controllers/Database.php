@@ -60,26 +60,41 @@ class Database extends BaseController
         return view('database/search', $data);
     }
 
+    public function invoice()
+    {
+        $data = [
+            'title' => 'Form invoice data',
+            'database' => $this->databaseModel->getDatabase()
+        ];
+
+        // Jika data tidak ada ditabel
+        if (empty($data['database'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data yang anda cari adalah :  '  . $slug .  ' dan tidak ada dalam database kami.');
+        }
+
+        return view('database/invoice', $data);
+    }
+
     public function save()
     {
         // validasi input 
         if (!$this->validate([
             'judul' => [
-                'rules' => 'required|is_unique[database.judul]',
+                'rules' => 'required|is_unique[komik.judul]',
                 'errors' => [
                     'required' => '{field} harus diisi.',
                     'is_unique' => '{field} sudah terdaftar.'
                 ]
             ],
             'penulis' => [
-                'rules' => 'required|is_unique[database.penulis]',
+                'rules' => 'required|is_unique[komik.penulis]',
                 'errors' => [
                     'required' => '{field} harus diisi.',
                     'is_unique' => '{field} sudah terdaftar.'
                 ]
             ],
             'penerbit' => [
-                'rules' => 'required|is_unique[database.penerbit]',
+                'rules' => 'required|is_unique[komik.penerbit]',
                 'errors' => [
                     'required' => '{field} harus diisi.',
                     'is_unique' => '{field} sudah terdaftar.'

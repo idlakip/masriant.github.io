@@ -41,7 +41,8 @@ $routes->get('/komik/(:segment)', 'Komik::detail/$1');
 
 $routes->get('/database/create', 'Database::create');
 $routes->get('/database/search', 'Database::search');
-$routes->get('/database/(:segment)', 'database::detail/$1');
+$routes->get('/database/invoice', 'Database::invoice');
+$routes->get('/database/(:segment)', 'Database::detail/$1');
 
 /**
  * --------------------------------------------------------------------

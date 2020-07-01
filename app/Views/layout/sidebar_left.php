@@ -42,6 +42,15 @@
                 </p>
             </a>
         </li>
+        <li class="nav-item has-treeview">
+            <a href="/database/invoice" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>
+                    Invoice
+                    <!-- <i class="fas fa-angle-left right"></i> -->
+                </p>
+            </a>
+        </li>
 
 
         <li class="nav-header">EXAMPLES</li>
@@ -72,7 +81,7 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="/pages/invoice" class="nav-link">
+                    <a href="/database/invoice" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Invoice</p>
                     </a>
