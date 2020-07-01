@@ -9,17 +9,17 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
     <!-- DataTables -->
-    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- jsGrid -->
-    <link rel="stylesheet" href="../../plugins/jsgrid/jsgrid.min.css">
-    <link rel="stylesheet" href="../../plugins/jsgrid/jsgrid-theme.min.css">
+    <link rel="stylesheet" href="/plugins/jsgrid/jsgrid.min.css">
+    <link rel="stylesheet" href="/plugins/jsgrid/jsgrid-theme.min.css">
     <!-- MyCSS style -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/dist/css/adminlte.min.css">
 </head>
 
 <!-- <body class="hold-transition sidebar-mini"> -->
@@ -49,6 +49,9 @@
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="<?= base_url('/komik'); ?>" class="nav-link">Komik</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="<?= base_url('/database'); ?>" class="nav-link">Database</a>
                 </li>
             </ul>
 
@@ -86,21 +89,21 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- jsGrid -->
-    <script src="../../plugins/jsgrid/demos/db.js"></script>
-    <script src="../../plugins/jsgrid/jsgrid.min.js"></script>
+    <script src="/plugins/jsgrid/demos/db.js"></script>
+    <script src="/plugins/jsgrid/jsgrid.min.js"></script>
     <!-- DataTables -->
-    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
+    <script src="/dist/js/demo.js"></script>
     <!-- page script -->
     <script>
         $(function() {

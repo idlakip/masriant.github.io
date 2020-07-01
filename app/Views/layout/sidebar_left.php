@@ -4,63 +4,44 @@
         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
         <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="/" class="nav-link active">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                     Dashboard
-                    <i class="right fas fa-angle-left"></i>
+                    <!-- <i class="right fas fa-angle-left"></i> -->
                 </p>
             </a>
-            <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <a href="../../index.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Dashboard v1</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../../index2.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Dashboard v2</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../../index3.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Dashboard v3</p>
-                    </a>
-                </li>
-            </ul>
+
         </li>
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="/pages/contact" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
-                    Widgets
-                    <span class="right badge badge-danger">New</span>
+                    Kontak
+                    <!-- <span class="right badge badge-danger">New</span> -->
                 </p>
             </a>
         </li>
         <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="/komik" class="nav-link">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>
-                    Layout Options
-                    <i class="fas fa-angle-left right"></i>
-                    <span class="badge badge-info right">6</span>
+                    Komik
+                    <!-- <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">6</span> -->
                 </p>
             </a>
-            <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <a href="../layout/top-nav.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Top Navigation</p>
-                    </a>
-                </li>
 
-            </ul>
         </li>
-
+        <li class="nav-item has-treeview">
+            <a href="/database" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                    Database
+                    <!-- <i class="fas fa-angle-left right"></i> -->
+                </p>
+            </a>
+        </li>
 
 
         <li class="nav-header">EXAMPLES</li>
@@ -91,27 +72,15 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="../mailbox/mailbox.html" class="nav-link">
+                    <a href="/pages/invoice" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Inbox</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../mailbox/compose.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Compose</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../mailbox/read-mail.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Read</p>
+                        <p>Invoice</p>
                     </a>
                 </li>
             </ul>
         </li>
         <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="/pages" class="nav-link">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
                     Pages
@@ -120,51 +89,21 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="../examples/invoice.html" class="nav-link">
+                    <a href="/pages/about" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>Invoice</p>
+                        <p>About</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="../examples/profile.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Profile</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../examples/e-commerce.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>E-commerce</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../examples/projects.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Projects</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../examples/project-add.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Project Add</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../examples/project-edit.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Project Edit</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../examples/project-detail.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Project Detail</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../examples/contacts.html" class="nav-link">
+                    <a href="/pages/contact" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Contacts</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/profile" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Profile</p>
                     </a>
                 </li>
             </ul>
