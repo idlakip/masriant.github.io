@@ -130,7 +130,7 @@ class Komik extends BaseController
         // cek judul
         $komikLama = $this->komikModel->getKomik($this->request->getVar('slug'));
         if ($komikLama['judul'] == $this->request->getVar('judul')) {
-            $rule_judul = 'reqiured';
+            $rule_judul = 'required';
         } else {
             $rule_judul = 'required|is_unique[komik.judul]';
         }
@@ -147,17 +147,19 @@ class Komik extends BaseController
                 ]
             ],
             'penulis' => [
-                'rules' => 'required|is_unique[komik.penulis]',
+                // 'rules' => 'required|is_unique[komik.penulis]',
+                'rules' => 'required',
                 'errors' => [
-                    'required' => '{field} harus diisi.',
-                    'is_unique' => '{field} sudah terdaftar.'
+                    'required' => '{field} harus diisi.'
+                    // 'is_unique' => '{field} sudah terdaftar.'
                 ]
             ],
             'penerbit' => [
-                'rules' => 'required|is_unique[komik.penerbit]',
+                // 'rules' => 'required|is_unique[komik.penerbit]',
+                'rules' => 'required',
                 'errors' => [
-                    'required' => '{field} harus diisi.',
-                    'is_unique' => '{field} sudah terdaftar.'
+                    'required' => '{field} harus diisi.'
+                    // 'is_unique' => '{field} sudah terdaftar.'
                 ]
             ]
 
