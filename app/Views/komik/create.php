@@ -20,7 +20,7 @@
             <!-- <h2 class="my-3">Form Tambah Data </h2> -->
             <!-- <form class="form-horizontal" action="/komik/save" method="post" id="quickForm"> -->
 
-            <form class="form-horizontal" action="/komik/save" method="post">
+            <form class="form-horizontal" action="/komik/save" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <div class="form-group row">
                     <label for="judul" class="col-sm-2 col-form-label">Judul</label>
@@ -49,15 +49,22 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="form-group row">
                     <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="sampul" name="sampul" placeholder="Sampul" value="<?= old('sampul'); ?>">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input <?= ($validation->hasError('sampul')) ? 'is-invalid' : ''; ?>" id="sampul" name="sampul">
+                            <div class="invalid-feedback">
+                                <?= $validation->getError('sampul'); ?>
+                            </div>
+                            <label class="custom-file-label" for="sampul">Pilih Gambar</label>
+                        </div>
                     </div>
                 </div>
 
                 <!-- </div> -->
-                <div class="form-group row">
+                <!-- <div class="form-group row">
                     <div class="offset-sm-2 col-sm-10">
                         <div class="checkbox">
                             <label>
@@ -65,14 +72,22 @@
                             </label>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group row">
                     <div class="offset-sm-2 col-sm-10">
                         <button type="submit" class="btn btn-sm btn-danger"><i class="far fa-closed-captioning"></i> Submit</button>
                         <button type="reset" class="btn btn-sm btn-primary"><i class="fas fa-undo-alt"></i> Reset</button>
                     </div>
                 </div>
-            </form>
+                <form class="mt-3">
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button id="btnResetForm" class="btn btn-primary">
+                                Reset form
+                            </button>
+                        </div>
+                    </div>
+                </form>
 
         </div>
         <!-- /.card-body -->

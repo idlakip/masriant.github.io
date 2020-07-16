@@ -14,7 +14,7 @@
 
         </li>
         <li class="nav-item">
-            <a href="/pages/contact" class="nav-link">
+            <a href="<?= base_url(); ?>/pages/contact" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                     Kontak
@@ -23,7 +23,7 @@
             </a>
         </li>
         <li class="nav-item has-treeview">
-            <a href="/komik" class="nav-link">
+            <a href="<?= base_url(); ?>/komik" class="nav-link">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>
                     Komik
@@ -34,7 +34,7 @@
 
         </li>
         <li class="nav-item has-treeview">
-            <a href="/database" class="nav-link">
+            <a href="<?= base_url(); ?>/database" class="nav-link">
                 <i class="nav-icon fas fa-table"></i>
                 <p>
                     Database
@@ -43,7 +43,7 @@
             </a>
         </li>
         <li class="nav-item has-treeview">
-            <a href="/database/invoice" class="nav-link">
+            <a href="<?= base_url(); ?>/database/invoice" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>
                     Invoice
@@ -53,24 +53,7 @@
         </li>
 
 
-        <li class="nav-header">EXAMPLES</li>
-        <li class="nav-item">
-            <a href="../calendar.html" class="nav-link">
-                <i class="nav-icon far fa-calendar-alt"></i>
-                <p>
-                    Calendar
-                    <span class="badge badge-info right">2</span>
-                </p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="../gallery.html" class="nav-link">
-                <i class="nav-icon far fa-image"></i>
-                <p>
-                    Gallery
-                </p>
-            </a>
-        </li>
+
         <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
                 <i class="nav-icon far fa-envelope"></i>
@@ -81,7 +64,7 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="/database/invoice" class="nav-link">
+                    <a href="<?= base_url(); ?>/database/invoice" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Invoice</p>
                     </a>
@@ -89,7 +72,7 @@
             </ul>
         </li>
         <li class="nav-item has-treeview">
-            <a href="/pages" class="nav-link">
+            <a href="<?= base_url(); ?>/pages" class="nav-link">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
                     Pages
@@ -98,19 +81,19 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="/pages/about" class="nav-link">
+                    <a href="<?= base_url(); ?>/pages/about" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>About</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/pages/contact" class="nav-link">
+                    <a href="<?= base_url(); ?>/pages/contact" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Contacts</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/pages/profile" class="nav-link">
+                    <a href="<?= base_url(); ?>/pages/profile" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Profile</p>
                     </a>
