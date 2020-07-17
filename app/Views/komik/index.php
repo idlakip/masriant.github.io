@@ -25,6 +25,7 @@
                                     <th>Judul</th>
                                     <th>Penulis</th>
                                     <th>Penerbit</th>
+                                    <th>Gambart</th>
                                     <th>Link</th>
                                 </tr>
                             </thead>
@@ -37,6 +38,7 @@
                                         <td><?= $k['judul']; ?></td>
                                         <td><?= $k['penulis']; ?></td>
                                         <td><?= $k['penerbit']; ?></td>
+                                        <td><?= $k['sampul']; ?></td>
                                         <td>
                                             <a href="/komik/<?= $k['slug']; ?>" class="btn btn-sm btn-success"><i class="fa fa-id-card" aria-hidden="true"></i> Detail</a>
                                         </td>
@@ -50,6 +52,7 @@
                                     <th>Judul</th>
                                     <th>Penulis</th>
                                     <th>Penerbit</th>
+                                    <th>Gambar</th>
                                     <th>Link</th>
                                 </tr>
                             </tfoot>
