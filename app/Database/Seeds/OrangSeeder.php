@@ -45,7 +45,6 @@ class OrangSeeder extends \CodeIgniter\Database\Seeder
     }
 
 
-
     // Simple Queries
     // $this->db->query(
     //   "INSERT INTO orang (nama, alamat,created_at,updated_at) VALUES(:nama:, :alamat:, :created_at:, :updated_at:)",
