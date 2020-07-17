@@ -10,19 +10,19 @@ class OrangSeeder extends \CodeIgniter\Database\Seeder
   public function run()
   {
     $data = [
-      'nama' => 'LAKIP',
+      'nama' => 'Masrianto SAB',
       'alamat'    => 'Jl. Serdang Baru Raya No. 4B - Jakarta',
       'created_at' => Time::now(),
       'updated_at' => Time::now(),
     ];
 
-    // Orang Queries
-    $this->db->query(
-      "INSERT INTO orang (nama, alamat,created_at,updated_at) VALUES(:nama:, :alamat:, :created_at:, :updated_at:)",
-      $data
-    );
+    // Simple Queries
+    // $this->db->query(
+    //   "INSERT INTO orang (nama, alamat,created_at,updated_at) VALUES(:nama:, :alamat:, :created_at:, :updated_at:)",
+    //   $data
+    // );
 
     // Using Query Builder
-    // $this->db->table('users')->insert($data);
+    $this->db->table('orang')->insert($data);
   }
 }

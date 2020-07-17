@@ -46,3 +46,37 @@ class Orang extends Migration
 }
 
 3. php spark migrate
+
+https://codeigniter.com/user_guide/dbmgmt/seeds.html?highlight=seed 
+
+1. Buat 
+<?php namespace App\Database\Seeds;
+
+class SimpleSeeder extends \CodeIgniter\Database\Seeder
+{
+        public function run()
+        {
+                $data = [
+                        'username' => 'darth',
+                        'email'    => 'darth@theempire.com'
+                ];
+
+                // Simple Queries
+                $this->db->query("INSERT INTO users (username, email) VALUES(:username:, :email:)",
+                        $data
+                );
+
+                // Using Query Builder
+                $this->db->table('users')->insert($data);
+        }
+}
+
+2. php spark db:seed OrangSeeder 
+
+use CodeIgniter\I18n\Time;
+
+$myTime = new Time('+3 week');
+$myTime = new Time('now');
+
+3. menggunakan Query Builder 
+$this->db->table('orang')->insert($data);
