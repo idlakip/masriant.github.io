@@ -9,27 +9,35 @@ class Orang extends Migration
 	public function up()
 	{
 		$this->forge->addField([
-			'blog_id'          => [
+			'id'          => [
 				'type'           => 'INT',
-				'constraint'     => 5,
+				'constraint'     => 11,
 				'unsigned'       => true,
 				'auto_increment' => true,
 			],
-			'blog_title'       => [
+			'nama'       => [
 				'type'           => 'VARCHAR',
-				'constraint'     => '100',
+				'constraint'     => '255',
 			],
-			'blog_description' => [
+			'alamat' => [
 				'type'           => 'TEXT',
-				'null'           => true,
+				'constraint'     => '255',
 			],
+			'created_at' => [
+				'type'					 => 'DATETIME',
+				'null'					=> true,
+			],
+			'updated_at' => [
+				'type'					 => 'DATETIME',
+				'null'					=> true,
+			]
 		]);
-		$this->forge->addKey('blog_id', true);
-		$this->forge->createTable('blog');
+		$this->forge->addKey('id', true);
+		$this->forge->createTable('orang');
 	}
 
 	public function down()
 	{
-		$this->forge->dropTable('blog');
+		$this->forge->dropTable('orang');
 	}
 }
