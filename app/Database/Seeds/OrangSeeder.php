@@ -34,12 +34,15 @@ class OrangSeeder extends \CodeIgniter\Database\Seeder
     $faker = \Faker\Factory::create('id_ID');
     // generate data by accessing properties
     // echo $faker->name;
-    $data = [
-      'nama'        => $faker->name,
-      'alamat'      => $faker->address,
-      'created_at'  => Time::createFromTimestamp($faker->unixTime()),
-      'updated_at'  => Time::now(),
-    ];
+    for ($i = 0; $i < 100; $i++) {
+      $data = [
+        'nama'        => $faker->name,
+        'alamat'      => $faker->address,
+        'created_at'  => Time::createFromTimestamp($faker->unixTime()),
+        'updated_at'  => Time::now(),
+      ];
+      $this->db->table('orang')->insert($data);
+    }
 
 
 
@@ -50,7 +53,7 @@ class OrangSeeder extends \CodeIgniter\Database\Seeder
     // );
 
     // Using Query Builder
-    $this->db->table('orang')->insert($data);
+    // $this->db->table('orang')->insert($data);
     // $this->db->table('orang')->insertBatch($data);
   }
 }
