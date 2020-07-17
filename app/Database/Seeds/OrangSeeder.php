@@ -10,10 +10,24 @@ class OrangSeeder extends \CodeIgniter\Database\Seeder
   public function run()
   {
     $data = [
-      'nama' => 'Masrianto SAB',
-      'alamat'    => 'Jl. Serdang Baru Raya No. 4B - Jakarta',
-      'created_at' => Time::now(),
-      'updated_at' => Time::now(),
+      [
+        'nama' => 'Masrianto SAB',
+        'alamat'    => 'Jl. Serdang Baru Raya No. 4B - Bandung',
+        'created_at' => Time::now(),
+        'updated_at' => Time::now(),
+      ],
+      [
+        'nama' => 'Hasan',
+        'alamat'    => 'Jl. Taruna Jaya No. 44 - Solo',
+        'created_at' => Time::now(),
+        'updated_at' => Time::now(),
+      ],
+      [
+        'nama' => 'Zainal',
+        'alamat'    => 'Jl. Serdang Baru IX No. 4B - Makassar',
+        'created_at' => Time::now(),
+        'updated_at' => Time::now(),
+      ]
     ];
 
     // Simple Queries
@@ -23,6 +37,7 @@ class OrangSeeder extends \CodeIgniter\Database\Seeder
     // );
 
     // Using Query Builder
-    $this->db->table('orang')->insert($data);
+    // $this->db->table('orang')->insert($data);
+    $this->db->table('orang')->insertBatch($data);
   }
 }
