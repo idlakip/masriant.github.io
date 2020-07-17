@@ -31,13 +31,13 @@ class OrangSeeder extends \CodeIgniter\Database\Seeder
     // ];
 
     // coba faker
-    $faker = \Faker\Factory::create();
+    $faker = \Faker\Factory::create('id_ID');
     // generate data by accessing properties
     // echo $faker->name;
     $data = [
       'nama'        => $faker->name,
       'alamat'      => $faker->address,
-      'created_at'  => Time::now(),
+      'created_at'  => Time::createFromTimestamp($faker->unixTime()),
       'updated_at'  => Time::now(),
     ];
 
