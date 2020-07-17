@@ -148,17 +148,16 @@
     <script>
         $(function() {
             bsCustomFileInput.init();
+
         });
-    </script>
-    <script>
-        bsCustomFileInput.init()
 
         var btn = document.getElementById('btnResetForm')
         var form = document.querySelector('form')
         btn.addEventListener('click', function() {
             form.reset()
-        })
+        });
     </script>
+
 </body>
 
 </html>

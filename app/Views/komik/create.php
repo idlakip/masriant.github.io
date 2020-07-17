@@ -58,36 +58,19 @@
                             <div class="invalid-feedback">
                                 <?= $validation->getError('sampul'); ?>
                             </div>
-                            <label class="custom-file-label" for="sampul">Pilih Gambar</label>
+                            <label class="custom-file-label" for="sampul">Pilih gambar</label>
                         </div>
                     </div>
                 </div>
 
-                <!-- </div> -->
-                <!-- <div class="form-group row">
-                    <div class="offset-sm-2 col-sm-10">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> I agree to the <a href=" #">terms and conditions</a>
-                            </label>
-                        </div>
-                    </div>
-                </div> -->
+
                 <div class="form-group row">
                     <div class="offset-sm-2 col-sm-10">
                         <button type="submit" class="btn btn-sm btn-danger"><i class="far fa-closed-captioning"></i> Submit</button>
-                        <button type="reset" class="btn btn-sm btn-primary"><i class="fas fa-undo-alt"></i> Reset</button>
+                        <button type="reset" id="btnResetForm" class="btn btn-sm btn-primary"><i class="fas fa-undo-alt"></i> Reset</button>
                     </div>
                 </div>
-                <form class="mt-3">
-                    <div class="form-group row">
-                        <div class="col-sm-10">
-                            <button id="btnResetForm" class="btn btn-primary">
-                                Reset form
-                            </button>
-                        </div>
-                    </div>
-                </form>
+
 
         </div>
         <!-- /.card-body -->

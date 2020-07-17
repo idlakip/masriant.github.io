@@ -86,7 +86,7 @@ class Komik extends BaseController
                 ]
             ],
             'sampul' => [
-                'rules' => 'uploaded[sampul]|max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png',
+                'rules' => 'uploaded[sampul]|max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
                 'errors' => [
                     'uploaded' => 'Pilih {field} terlebih dahulu.',
                     'max_size' => 'Ukuran {field} terlalu besar.',
@@ -105,7 +105,7 @@ class Komik extends BaseController
         // Generate nama sampul random
         $namasampul = $filesampul->getRandomName();
         // pindahkan file ke folder img
-        $filesampul->move('img', $namasampul);
+        $filesampul->move('images', $namasampul);
         // ambil nama file
         // $namasampul = $filesampul->getName();
 
