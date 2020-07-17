@@ -25,10 +25,10 @@ class Orang extends Migration
 			],
 			'created_at' => [
 				'type'					 => 'DATETIME',
-				'null'					=> true,
+				'null'					 => true,
 			],
 			'updated_at' => [
-				'type'					 => 'DATETIME',
+				'type'					=> 'DATETIME',
 				'null'					=> true,
 			]
 		]);

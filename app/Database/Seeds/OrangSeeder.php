@@ -2,22 +2,22 @@
 
 namespace App\Database\Seeds;
 
-class SimpleSeeder extends \CodeIgniter\Database\Seeder
+class OrangSeeder extends \CodeIgniter\Database\Seeder
 {
   public function run()
   {
     $data = [
-      'username' => 'darth',
-      'email'    => 'darth@theempire.com'
+      'nama' => 'Masrianto',
+      'alamat'    => 'Jl. Serdang Baru IX - Jakarta'
     ];
 
-    // Simple Queries
+    // Orang Queries
     $this->db->query(
-      "INSERT INTO users (username, email) VALUES(:username:, :email:)",
+      "INSERT INTO orang (nama, alamat) VALUES(:nama:, :alamat:)",
       $data
     );
 
     // Using Query Builder
-    $this->db->table('users')->insert($data);
+    // $this->db->table('users')->insert($data);
   }
 }
